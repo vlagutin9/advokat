@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Віталій Лагутін | Юридичний захист</title>
+    <style>
+        :root {
+            --primary-color: #0F2027;
+            --secondary-color: #203A43;
+            --accent-color: #D4AF37;
+            --text-color: #333;
+            --light-bg: #f4f4f9;
+            --viber-color: #7360f2;
+            --tg-color: #0088cc;
+            --ig-color: #E1306C;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; color: var(--text-color); line-height: 1.6; scroll-behavior: smooth; }
+        header { background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); color: white; padding: 80px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        
+        .contact-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
+        .btn { display: inline-block; padding: 12px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; text-transform: uppercase; transition: 0.3s; font-size: 0.85em; }
+        .btn-viber { background-color: var(--viber-color); color: white; }
+        .btn-tg { background-color: var(--tg-color); color: white; }
+        .btn-ig { background-color: var(--ig-color); color: white; }
+        .btn-main { background-color: var(--accent-color); color: var(--primary-color); }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+        section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+        h2 { text-align: center; color: var(--primary-color); margin-bottom: 40px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: white; border-left: 5px solid var(--accent-color); padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+
+        .case-card { background: #fff; padding: 25px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #ddd; border-top: 4px solid var(--accent-color); }
+        .case-tag { color: var(--accent-color); font-weight: bold; font-size: 0.9em; text-transform: uppercase; display: block; margin-bottom: 10px; }
+
+        .step { display: flex; align-items: flex-start; margin-bottom: 20px; gap: 15px; }
+        .step-num { background: var(--accent-color); color: var(--primary-color); font-weight: bold; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+
+        details { background: white; padding: 18px; border-radius: 8px; margin-bottom: 12px; border: 1px solid #eee; cursor: pointer; transition: 0.3s; }
+        details:hover { border-color: var(--accent-color); }
+        summary { font-weight: bold; color: var(--secondary-color); list-style: none; position: relative; padding-left: 25px; }
+        summary::before { content: '▶'; position: absolute; left: 0; color: var(--accent-color); font-size: 0.8em; transition: 0.3s; }
+        details[open] summary::before { transform: rotate(90deg); }
+
+        .schedule-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); display: inline-block; text-align: left; min-width: 280px; }
+        .schedule-row { display: flex; justify-content: space-between; gap: 40px; border-bottom: 1px dotted #ccc; padding: 8px 0; }
+
+        footer { background-color: var(--primary-color); color: white; text-align: center; padding: 50px 20px; }
+        footer a { color: var(--accent-color); text-decoration: none; }
+        .footer-contacts { margin-top: 20px; font-size: 1.1em; line-height: 2; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Віталій Лагутін</h1>
+    <p>Юридичний захист у найскладніших обставинах</p>
+    <div class="contact-buttons">
+        <a href="tel:+380933397929" class="btn btn-main">Дзвінок</a>
+        <a href="viber://chat?number=%2B380933397929" class="btn btn-viber">Viber</a>
+        <a href="https://t.me/+380933397929" class="btn btn-tg">Telegram</a>
+        <a href="https://www.instagram.com/vvvlll.21/" target="_blank" class="btn btn-ig">Instagram</a>
+    </div>
+</header>
+
+<!-- Про мене -->
+<section>
+    <h2>Професійний захист</h2>
+    <p style="text-align: center; font-size: 1.1em; max-width: 800px; margin: auto;">
+        <strong>7 років юридичного стажу.</strong> Я спеціалізуюся на вирішенні критичних правових ситуацій. 
+        Завдяки великому досвіду та роботі професійної команди, ми забезпечуємо юридичний результат навіть у найбільш заплутаних справах.
+    </p>
+</section>
+
+<!-- Послуги -->
+<section style="background-color: var(--light-bg);">
+    <h2>Напрямки діяльності</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🪖 Військове право</h3>
+            <ul>
+                <li>Звільнення з лав ЗСУ</li>
+                <li>Оскарження висновків ВЛК</li>
+                <li>Виплати за поранення/загибель</li>
+                <li>Захист при мобілізації</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>👮‍♂️ Кримінальне право</h3>
+            <ul>
+                <li>Захист у військових злочинах</li>
+                <li>Економічні злочини та корупція</li>
+                <li>Представництво в судах та ДБР</li>
+                <li>Допомога при обшуках та затриманнях</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>👵 Пенсійні спори</h3>
+            <ul>
+                <li>Перерахунок військових пенсій</li>
+                <li>Індексація та повернення боргу</li>
+                <li>Визнання стажу через суд</li>
+                <li>Оскарження відмов ПФУ</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Алгоритм роботи -->
+<section>
+    <h2>Алгоритм взаємодії</h2>
+    <div class="step">
+        <div class="step-num">1</div>
+        <div><strong>Експрес-аналіз:</strong> Ви описуєте ситуацію, я проводжу первинний аудит та даю оцінку шансів за 2 години.</div>
+    </div>
+    <div class="step">
+        <div class="step-num">2</div>
+        <div><strong>Стратегія:</strong> Формуємо план дій, готуємо необхідні адвокатські запити та процесуальні документи.</div>
+    </div>
+    <div class="step">
+        <div class="step-num">3</div>
+        <div><strong>Захист інтересів:</strong> Представництво ваших прав у судах, ТЦК, ВЛК чи державних установах силами наших експертів.</div>
+    </div>
+    <div class="step">
+        <div class="step-num">4</div>
+        <div><strong>Результат:</strong> Отримання кінцевого рішення та контроль за його фактичним виконанням.</div>
+    </div>
+</section>
+
+<!-- Кейси -->
+<section style="background-color: var(--light-bg);">
+    <h2>Успішна практика</h2>
+    <div class="case-card">
+        <span class="case-tag">Військове право</span>
+        <p><strong>Справа:</strong> Визнання військовослужбовця придатним попри наявність контузії та травм хребта.<br>
+        <strong>Результат:</strong> Через Центральну ВЛК домоглися перегляду рішення. Клієнта визнано непридатним до військової служби.</p>
+    </div>
+    <div class="case-card">
+        <span class="case-tag">Виплати та допомога</span>
+        <p><strong>Справа:</strong> Відмова у виплаті одноразової грошової допомоги сім’ї загиблого через помилку в документах частини.<br>
+        <strong>Результат:</strong> Шляхом подачі адвокатських запитів та звернення до суду помилку виправлено. Сім’я отримала повну суму допомоги.</p>
+    </div>
+    <div class="case-card">
+        <span class="case-tag">Пенсійне право</span>
+        <p><strong>Справа:</strong> Відмова ПФУ перераховувати пенсію згідно з оновленою довідкою про грошове забезпечення.<br>
+        <strong>Результат:</strong> Суд задовольнив позов у повному обсязі. Пенсію збільшено у 1.8 раза, виплачено заборгованість за 2 роки.</p>
+    </div>
+    <div class="case-card">
+        <span class="case-tag">Кримінальне право (СЗЧ)</span>
+        <p><strong>Справа:</strong> Відкриття провадження за фактом самовільного залишення частини військовослужбовцем.<br>
+        <strong>Результат:</strong> Довели наявність поважних причин. Провадження закрито на етапі досудового слідства.</p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section>
+    <h2>Питання та відповіді</h2>
+    <details>
+        <summary>Що робити, якщо ВЛК ігнорує мої діагнози?</summary>
+        <p>Не підписуйте висновок без зауважень. Потрібно подавати скаргу до регіональної або Центральної ВЛК з наданням альтернативних медичних висновків. Наші юристи допоможуть правильно зафіксувати ці порушення.</p>
+    </details>
+    <details>
+        <summary>Які шанси на перерахунок військової пенсії сьогодні?</summary>
+        <p>Судова практика на 95% на боці пенсіонерів. Якщо ПФУ відмовляється враховувати додаткові види грошового забезпечення — це прямий шлях до перемоги в суді за нашої підтримки.</p>
+    </details>
+    <details>
+        <summary>Чи допомагаєте ви з питаннями звільнення за сімейними обставинами?</summary>
+        <p>Так. Найчастіші підстави: догляд за рідними з інвалідністю I-II групи або самостійне виховання дитини. Ми готуємо повний пакет документів, щоб забезпечити успішний розгляд рапорту.</p>
+    </details>
+    <details>
+        <summary>Як відбувається оплата послуг?</summary>
+        <p>Ми укладаємо офіційний договір. Оплата може бути фіксованою або залежати від результату — все обговорюється індивідуально після аналізу вашої справи.</p>
+    </details>
+</section>
+
+<!-- Графік -->
+<section style="text-align: center; background-color: var(--light-bg);">
+    <h2>Графік роботи</h2>
+    <div class="schedule-box">
+        <div class="schedule-row"><span>Пн - Пт:</span> <span>09:30 – 18:30</span></div>
+        <div class="schedule-row"><span>Сб - Нд:</span> <span>10:30 – 18:00</span></div>
+        <p style="font-size: 0.85em; color: #666; margin-top: 15px;">* Екстрені ситуації (затримання) — 24/7</p>
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Отримайте професійну консультацію</h2>
+    <div class="footer-contacts">
+        <p>📞 <a href="tel:+380933397929">+38 (093) 339-79-29</a></p>
+        <p>📸 Instagram: <a href="https://www.instagram.com/vvvlll.21/" target="_blank">@vvvlll.21</a></p>
+        <p>📱 <a href="viber://chat?number=%2B380933397929" style="color: var(--viber-color);">Viber</a> | <a href="https://t.me/+380933397929" style="color: var(--tg-color);">Telegram</a></p>
+        <p>✉️ <a href="mailto:vlagutin9@gmail.com">vlagutin9@gmail.com</a></p>
+    </div>
+    <p style="margin-top: 40px; font-size: 0.8em; color: #777;">&copy; 2026 Віталій Лагутін. Юридична допомога по всій Україні.</p>
+</footer>
+
+</body>
+</html>
